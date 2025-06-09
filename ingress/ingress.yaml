@@ -7,6 +7,7 @@ metadata:
     # Let's Encrypt는 무료 SSL 인증서를 발급해주는 유명한 기관
     cert-manager.io/cluster-issuer: letsencrypt-prod
     # http 요청이 들어오면 자동으로 https로 리다이렉트 (응답 및 재요청) 처리해라.
+    ####
     nginx.ingress.kubernetes.io/ssl-redirect: 'true'
 spec:
   # 설치한 ingress controller 의 종류를 명시 -> 우리가 설치한 게 nginx 라는 도구를 사용한 ingress
