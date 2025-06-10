@@ -18,10 +18,10 @@ spec:
   # 그 인증서를 통해 HTTPS 연결 처리
   tls:
     - hosts:
-        - api.playdatashoporder123456789.store
+        - api-v1.playdatashoporder123456789.store
       secretName: api-playdatashop-tls
   rules:
-    - host: api.playdatashoporder123456789.store
+    - host: api-v1.playdatashoporder123456789.store
       http:
         paths:
           - path: /
